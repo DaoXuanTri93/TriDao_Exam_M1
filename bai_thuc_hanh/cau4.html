@@ -13,13 +13,13 @@
                 this.Fullname = Fullname;
                 this.Email = Email;
                 this.setFullname = function (setName) {
-                    return this.Fullname = Value;
+                    return this.Fullname = setName;
                 };
                 this.getFullname = function () {
                     return this.Fullname;
                 };
                 this.setEmail = function (setEmail) {
-                    return this.Email = Value;
+                    return this.Email = setEmail;
                 };
                 this.getEmail = function () {
                     return this.Email;
@@ -32,16 +32,15 @@
         const david = new Staff("David", "david@gmail.com");
         david.setFullname("David Do");
         david.setEmail("david.do@gmail.com");
-        document.write(david.toString());
-        const staffs = [
+        david.toString();
+        let Staffs = [
             david,
             new Staff("Tri", "xuantri@gmail.com"),
             new Staff("Minh", "Minh@gmail.com"),
             new Staff("Luong", "NguyenThiLuong@gmail.com"),
         ];
-        document.write(david)
-        for (let i = 0; i < staffs.length; i++) {
-            document.write(staffs[i].toString());
+        for (let i = 0; i < Staffs.length; i++) {
+            document.write(Staffs[i].toString());
         };
 
 
