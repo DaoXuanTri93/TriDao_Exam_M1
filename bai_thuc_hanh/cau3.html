@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let count = 0;
+        let i;
+        let str = prompt('Nhập vào 1 chuỗi bất kì:').toLocaleLowerCase();
+        function searchChart(str) {          
+            for (i = 0; i < str.length; i++) {
+                if (str[i] == 'a' || str[i] == 'o' || str[i] == 'e' || str[i] == 'u' || str[i] == 'i') {
+                    count++;
+                }
+            }
+                if (count == 0) {
+                    return false;
+            }
+                else {
+                    return alert(`Số kí tự nguyên âm trong chuỗi là: ${count}`);
+            }
+        }
+    searchChart(str);
+    </script>
+</body>
+
+</html>
